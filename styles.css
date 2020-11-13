@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: rgb(4, 24, 13);
+}
+#title {
+  font-family: 'Pacifico', cursive;
+  color: rgb(223, 98, 98);
+}
+#title-sub {
+  font-family: 'Open Sans', sans-serif;
+  color: gray;
+  font-size: 15px;
+}
+
+.grid:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+.grid-col {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+.grid-col--2,
+.grid-col--3 {
+  display: none;
+}
+.grid-item {
+  margin-bottom: 20px;
+}
+
+#error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid lightgray;
+  color: lightgray;
+}
+#loader-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+#loader svg text {
+  fill: lightgray;
+}
+
+@media (min-width: 700px) {
+  body {
+    padding: 20px 50px;
+  }
+  .grid-col {
+    width: 50%;
+  }
+  .grid-col--2 {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    padding: 20px 80px;
+  }
+  .grid-col {
+    width: 33.3%;
+  }
+  .grid-col--2,
+  .grid-col--3 {
+    display: block;
+  }
+}

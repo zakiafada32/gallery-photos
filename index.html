@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinity Scroll</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png?v=2" />
+    <link href="styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/1869f8b461.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 id="title">
+      Infinity Scroll <span id="title-sub">with Unsplash API</span>
+    </h1>
+    <!-- image container -->
+    <div class="grid" id="image-container">
+      <div class="grid-col grid-col--1"></div>
+      <div class="grid-col grid-col--2"></div>
+      <div class="grid-col grid-col--3"></div>
+    </div>
+    <!-- error message -->
+    <div id="error-message">error</div>
+    <!-- loader -->
+    <div id="loader-wrapper">
+      <img id="loader" src="assets/loader.svg" alt="Loading" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
