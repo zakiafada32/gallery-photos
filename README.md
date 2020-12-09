@@ -1,1 +1,1 @@
-# gallery-photos
+# Infinity Scroll
